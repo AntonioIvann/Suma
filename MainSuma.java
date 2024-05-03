@@ -7,10 +7,12 @@ public class MainSuma {
         int n1 = su.nextInt();
         System.out.println("Dame el segundo valor: ");
         int n2 = su.nextInt();
-        Suma su1 = new Suma();
-        su1.n1 = n1;
-        su1.n2 = n2;
-        System.out.println("El resultado es: " + su1.mostrarResultado());
 
+        Suma su1 = new Suma();
+        su1.setN1(n1);
+        su1.setN2(n2);
+        su1.mostrarResultado();
+        System.out.println("El resultado de la suma es: " + su1.mostrarResultado());
+        System.out.println(su1.toString());
     }
 }
